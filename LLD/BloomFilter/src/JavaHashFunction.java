@@ -1,4 +1,7 @@
-package PACKAGE_NAME;
+public class JavaHashFunction implements HashFunction<String> {
 
-public class JavaHashFunction {
+    @Override
+    public int hash(String value){
+        return value.hashCode();
+    }
 }

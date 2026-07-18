@@ -10,6 +10,12 @@ public class Main {
 
         BloomFilter<String> bloomFilter=new BloomFilter(100,hashFunctions);
 
+        bloomFilter.add("Addarsh");
+        bloomFilter.add("Aditya");
+        bloomFilter.add("Aman");
 
+        System.out.println(bloomFilter.mightContain("Apple"));
+        System.out.println(bloomFilter.mightContain("Aman"));
+        System.out.println(bloomFilter.mightContain("Aditya"));
     }
 }

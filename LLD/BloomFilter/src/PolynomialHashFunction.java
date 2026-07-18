@@ -1,4 +1,14 @@
-package PACKAGE_NAME;
+public class PolynomialHashFunction implements HashFunction<String>{
 
-public class PolynomialHashFunction {
+    @Override
+    public int hash(String value) {
+        int hash = 0;
+        int prime = 31;
+
+        for(char c : value.toCharArray()) {
+            hash = hash * prime + c;
+        }
+
+        return hash;
+    }
 }

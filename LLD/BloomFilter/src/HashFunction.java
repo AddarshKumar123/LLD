@@ -1,4 +1,3 @@
-package PACKAGE_NAME;
-
-public class HashFunction {
+public interface HashFunction<T> {
+    int hash(T value);
 }
